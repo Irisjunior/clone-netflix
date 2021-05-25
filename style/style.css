@@ -1,0 +1,96 @@
+/*variaveis---------------*/
+:root{
+  --vermelho:red;
+  --preto:black;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base------------*/
+body{
+  background: var(--preto);
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue ;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+header .logo{
+  color: var(--vermelho);
+  font-size: 40px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #fff;
+}
+
+/*--------filme principal-----------*/
+
+.filme-principal{
+  font-size: 16px;
+  background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.30)100%), url(../img/capa-kill-bill.jpg);
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+  margin-bottom: 1.5rem;
+  margin-top: 10px;
+}
+.titulo{
+  margin-top: 10%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+  cursor: pointer;
+  background-color:rgba(0,0,0,.50);
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  margin-right: 15px;
+  font-size: 12px;
+  transition: .3s ease all;
+}
+.botao:hover{
+  background-color: rgb(212, 212, 212);
+  color: black;
+  border: black solid 1px;
+}
+.botao i{
+  margin-right: 8px;
+}
+.container{
+  margin-left: 0.5rem;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme{
+  width: 150px;
+  display: block;
+}
+
+.carosel-filmes{
+  margin-top: 15px;
+}
